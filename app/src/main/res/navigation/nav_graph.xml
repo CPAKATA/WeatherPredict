@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/weatherTodayFragment">
+    <fragment
+        android:id="@+id/weatherTodayFragment"
+        android:name="com.example.weatherpredict.ui.fragment.WeatherTodayFragment"
+        android:label="fragment_weather_today"
+        tools:layout="@layout/fragment_weather_today" />
+    <fragment
+        android:id="@+id/weatherWeekFragment"
+        android:name="com.example.weatherpredict.ui.fragment.WeatherWeekFragment"
+        android:label="fragment_weather_week"
+        tools:layout="@layout/fragment_weather_week" />
+    <fragment
+        android:id="@+id/weatherCityFragment"
+        android:name="com.example.weatherpredict.ui.fragment.WeatherCityFragment"
+        android:label="fragment_weather_city"
+        tools:layout="@layout/fragment_weather_city" />
+    <fragment
+        android:id="@+id/weatherCitySelectFragment"
+        android:name="com.example.weatherpredict.ui.fragment.WeatherCitySelectFragment"
+        android:label="fragment_weather_city_select"
+        tools:layout="@layout/fragment_weather_city_select" />
+</navigation>

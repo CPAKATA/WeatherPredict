@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".ui.fragment.WeatherTodayFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginTop="20dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:text="Москва"
+                android:gravity="center"
+                android:textAlignment="center"
+                android:textSize="50sp">
+            </TextView>
+
+            <TextView
+                android:id="@+id/temp_now"
+                android:layout_width="match_parent"
+                android:layout_height="90dp"
+                android:text="+26 C"
+                android:textAlignment="center"
+                android:textSize="60sp"
+                android:gravity="center">
+            </TextView>
+
+            <LinearLayout
+                android:layout_marginTop="30dp"
+                android:layout_width="match_parent"
+                android:layout_height="90dp"
+                android:orientation="horizontal">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="Утро"
+                        android:textAlignment="center">
+                    </TextView>
+
+                    <TextView
+                        android:id="@+id/tv_morning_temp"
+                        android:layout_width="match_parent"
+                        android:layout_height="55dp"
+                        android:layout_gravity="bottom|center"
+                        android:text="+25"
+                        android:textSize="27sp"
+                        android:textAlignment="center">
+                    </TextView>
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="День"
+                        android:textAlignment="center">
+                    </TextView>
+
+                    <TextView
+                        android:id="@+id/tv_day_temp"
+                        android:layout_width="match_parent"
+                        android:layout_height="55dp"
+                        android:layout_gravity="bottom|center"
+                        android:text="+25"
+                        android:textSize="27sp"
+                        android:textAlignment="center">
+                    </TextView>
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="Вечер"
+                        android:textAlignment="center">
+                    </TextView>
+
+                    <TextView
+                        android:id="@+id/tv_evening_temp"
+                        android:layout_width="match_parent"
+                        android:layout_height="55dp"
+                        android:layout_gravity="bottom|center"
+                        android:text="+25"
+                        android:textSize="27sp"
+                        android:textAlignment="center">
+                    </TextView>
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="Ночь"
+                        android:textAlignment="center">
+                    </TextView>
+
+                    <TextView
+                        android:id="@+id/tv_night_temp"
+                        android:layout_width="match_parent"
+                        android:layout_height="55dp"
+                        android:layout_gravity="bottom|center"
+                        android:text="+25"
+                        android:textSize="27sp"
+                        android:textAlignment="center">
+                    </TextView>
+
+                </androidx.cardview.widget.CardView>
+
+            </LinearLayout>
+
+        <TextView
+            android:id="@+id/weather"
+            android:layout_marginStart="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:text="Погода:"
+            android:textSize="30sp"
+            android:gravity="left|center_vertical">
+        </TextView>
+
+        <TextView
+            android:id="@+id/humidity"
+            android:layout_marginStart="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:text="Влажность:"
+            android:textSize="30sp"
+            android:gravity="left|center_vertical">
+        </TextView>
+
+        <TextView
+            android:id="@+id/pressure"
+            android:layout_marginStart="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:text="Давление:"
+            android:textSize="30sp"
+            android:gravity="left|center_vertical">
+        </TextView>
+
+        <TextView
+            android:id="@+id/wind"
+            android:layout_marginStart="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:text="Ветер:"
+            android:textSize="30sp"
+            android:gravity="left|center_vertical">
+        </TextView>
+
+    </LinearLayout>
+
+</layout>

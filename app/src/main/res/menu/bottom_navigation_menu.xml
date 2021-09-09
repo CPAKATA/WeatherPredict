@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/weather_now"
+        android:enabled="true"
+        android:icon="@drawable/ic_cloud"
+        android:title="Сегодня"/>
+
+    <item
+        android:id="@+id/weather_week"
+        android:enabled="true"
+        android:icon="@drawable/ic_week"
+        android:title="Неделя"/>
+
+    <item
+        android:id="@+id/weather_geo"
+        android:enabled="true"
+        android:icon="@drawable/ic_location"
+        android:title="Геолокация"/>
+
+    <item
+        android:id="@+id/weather_somewhere"
+        android:enabled="true"
+        android:icon="@drawable/ic_baseline_format_list_bulleted_24"
+        android:title="Города">
+    </item>
+</menu>
