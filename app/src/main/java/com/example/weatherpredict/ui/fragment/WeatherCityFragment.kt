@@ -79,7 +79,6 @@ class WeatherCityFragment : Fragment(), TextConverter{
         }
         task.addOnSuccessListener {
             if(it!=null){
-                Log.d("lat", it.latitude.toString())
                 viewModel.loadTempWeek(it.latitude.toString(),it.longitude.toString())
                 viewModel.weather.observe(viewLifecycleOwner,{
                     binding.loading.visibility = View.GONE

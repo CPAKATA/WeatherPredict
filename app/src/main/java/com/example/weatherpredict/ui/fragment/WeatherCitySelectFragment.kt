@@ -47,9 +47,10 @@ class WeatherCitySelectFragment : Fragment(),TextConverter {
             binding.loading.visibility = View.VISIBLE
             viewModel.loadSelectTemp(binding.editCity.text.toString())
             viewModel.weather.observe(viewLifecycleOwner,{
+                var text = "Погода: " + it.weather[0].description
                 binding.tvCityName.text = it.name
                 binding.tempNow.text = toCelcius(it.main.temp.toInt().toString())
-                binding.weather.text = toWeather(it.weather[0].description)
+                binding.weather.text = text
                 binding.humidity.text = toHumidity(it.main.humidity.toString())
                 binding.pressure.text = toPressure(it.main.pressure.toString())
                 binding.wind.text = toWind(it.wind.speed.toString())
