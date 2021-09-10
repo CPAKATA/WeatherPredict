@@ -3,7 +3,21 @@
     xmlns:tools="http://schemas.android.com/tools"
     tools:context=".ui.fragment.WeatherTodayFragment">
 
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ProgressBar
+            android:id="@+id/loading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="?android:attr/progressBarStyleLarge"
+            android:layout_centerInParent="true">
+        </ProgressBar>
+
     <LinearLayout
+        android:visibility="gone"
+        android:id="@+id/layout"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical"
@@ -158,7 +172,7 @@
             android:layout_width="match_parent"
             android:layout_height="60dp"
             android:text="Давление:"
-            android:textSize="30sp"
+            android:textSize="23sp"
             android:gravity="left|center_vertical">
         </TextView>
 
@@ -173,5 +187,7 @@
         </TextView>
 
     </LinearLayout>
+
+    </RelativeLayout>
 
 </layout>

@@ -3,11 +3,26 @@
     xmlns:tools="http://schemas.android.com/tools"
     tools:context=".ui.fragment.WeatherWeekFragment">
 
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <ProgressBar
+        android:id="@+id/loading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="?android:attr/progressBarStyleLarge"
+        android:layout_centerInParent="true">
+    </ProgressBar>
+
     <androidx.recyclerview.widget.RecyclerView
+        android:visibility="gone"
         android:id="@+id/recyclerView"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         tools:listitem="@layout/weather_item">
     </androidx.recyclerview.widget.RecyclerView>
+
+</RelativeLayout>
 
 </layout>

@@ -49,6 +49,8 @@ class WeatherWeekFragment : Fragment() {
         viewModel.loadTempWeek()
         viewModel.weather.observe(viewLifecycleOwner,{
             binding.recyclerView.adapter = RecyclerViewAdapter(it)
+            binding.loading.visibility = View.GONE
+            binding.recyclerView.visibility = View.VISIBLE
         })
 
     }

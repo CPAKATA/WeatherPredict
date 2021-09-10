@@ -1,5 +1,6 @@
 package com.example.weatherpredict.ui.fragment
 
+import android.opengl.Visibility
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
@@ -53,6 +54,8 @@ class WeatherTodayFragment : Fragment(),TextConverter {
             binding.humidity.text = toHumidity(it.fact.humidity.toString())
             binding.pressure.text = toPressure(it.fact.pressure_mm.toString())
             binding.wind.text = toWind(it.fact.wind_speed.toString(),it.fact.wind_dir)
+            binding.loading.visibility = View.GONE
+            binding.layout.visibility = View.VISIBLE
         })
     }
 }

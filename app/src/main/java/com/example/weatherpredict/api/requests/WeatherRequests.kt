@@ -1,8 +1,7 @@
 package com.example.weatherpredict.api.requests
 
-import com.example.weatherpredict.api.dto.Weather
+import com.example.weatherpredict.api.dto.Yandex.Weather
 import retrofit2.http.GET
-import retrofit2.http.Path
 import retrofit2.http.Query
 
 interface WeatherRequests {

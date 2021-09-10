@@ -2,12 +2,28 @@
 <layout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     tools:context=".ui.fragment.WeatherCitySelectFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ProgressBar
+            android:id="@+id/loading"
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="?android:attr/progressBarStyleLarge"
+            android:layout_centerInParent="true">
+        </ProgressBar>
+
     <LinearLayout
+        android:id="@+id/layout"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical">
 
         <EditText
+            android:id="@+id/edit_city"
             android:layout_marginTop="250dp"
             android:layout_width="400dp"
             android:layout_height="50dp"
@@ -18,14 +34,87 @@
         </EditText>
 
         <Button
+            android:id="@+id/btn_check"
             android:layout_marginTop="30dp"
             android:layout_width="300dp"
             android:layout_height="50dp"
             android:layout_gravity="center_horizontal"
-            android:text="Узнать температуру"
+            android:text="Узнать погоду"
             android:textSize="15sp">
         </Button>
 
     </LinearLayout>
+
+        <LinearLayout
+            android:visibility="gone"
+            android:id="@+id/layout1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_marginTop="20dp">
+
+            <TextView
+                android:id="@+id/tv_city_name"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:text="Москва"
+                android:gravity="center"
+                android:textAlignment="center"
+                android:textSize="50sp">
+            </TextView>
+
+            <TextView
+                android:id="@+id/temp_now"
+                android:layout_width="match_parent"
+                android:layout_height="90dp"
+                android:text="+26 C"
+                android:textAlignment="center"
+                android:textSize="60sp"
+                android:gravity="center">
+            </TextView>
+
+            <TextView
+                android:id="@+id/weather"
+                android:layout_marginStart="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:text="Погода:"
+                android:textSize="20sp"
+                android:gravity="left|center_vertical">
+            </TextView>
+
+            <TextView
+                android:id="@+id/humidity"
+                android:layout_marginStart="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:text="Влажность:"
+                android:textSize="30sp"
+                android:gravity="left|center_vertical">
+            </TextView>
+
+            <TextView
+                android:id="@+id/pressure"
+                android:layout_marginStart="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:text="Давление:"
+                android:textSize="20sp"
+                android:gravity="left|center_vertical">
+            </TextView>
+
+            <TextView
+                android:id="@+id/wind"
+                android:layout_marginStart="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:text="Ветер:"
+                android:textSize="30sp"
+                android:gravity="left|center_vertical">
+            </TextView>
+
+        </LinearLayout>
+
+    </RelativeLayout>
 
 </layout>

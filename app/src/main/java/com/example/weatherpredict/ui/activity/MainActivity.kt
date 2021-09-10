@@ -34,7 +34,7 @@ class MainActivity : AppCompatActivity() {
                     true
                 }
                 R.id.weather_somewhere -> {
-                    controller.navigate(R.id.weatherCityFragment)
+                    controller.navigate(R.id.weatherCitySelectFragment)
                     true
                 }
                 else -> false

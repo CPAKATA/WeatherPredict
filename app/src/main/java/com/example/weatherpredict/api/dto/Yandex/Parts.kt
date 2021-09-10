@@ -1,4 +1,4 @@
-package com.example.weatherpredict.api.dto
+package com.example.weatherpredict.api.dto.Yandex
 
 data class Parts(
     val day: Day,

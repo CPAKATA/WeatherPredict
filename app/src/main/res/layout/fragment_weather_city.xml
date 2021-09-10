@@ -3,7 +3,21 @@
     xmlns:tools="http://schemas.android.com/tools"
     tools:context=".ui.fragment.WeatherTodayFragment">
 
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ProgressBar
+            android:id="@+id/loading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="?android:attr/progressBarStyleLarge"
+            android:layout_centerInParent="true">
+        </ProgressBar>
+
     <LinearLayout
+        android:id="@+id/layout"
+        android:visibility="gone"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical">
@@ -11,14 +25,15 @@
         <TextView
             android:id="@+id/tv_city_name"
             android:layout_width="match_parent"
-            android:layout_height="100dp"
+            android:layout_height="150dp"
             android:text="Москва"
             android:gravity="center"
             android:textAlignment="center"
-            android:textSize="50sp">
+            android:textSize="40sp">
         </TextView>
 
         <TextView
+            android:id="@+id/tv_temp"
             android:layout_width="match_parent"
             android:layout_height="90dp"
             android:text="+26 C"
@@ -48,12 +63,11 @@
                 <TextView
                     android:id="@+id/tv_morning_temp"
                     android:layout_width="match_parent"
-                    android:layout_height="60dp"
+                    android:layout_height="55dp"
                     android:layout_gravity="bottom|center"
                     android:text="+25"
-                    android:textSize="30sp"
-                    android:textAlignment="center"
-                    android:layout_marginRight="7dp">
+                    android:textSize="27sp"
+                    android:textAlignment="center">
                 </TextView>
 
             </androidx.cardview.widget.CardView>
@@ -73,12 +87,11 @@
                 <TextView
                     android:id="@+id/tv_day_temp"
                     android:layout_width="match_parent"
-                    android:layout_height="60dp"
+                    android:layout_height="55dp"
                     android:layout_gravity="bottom|center"
                     android:text="+25"
-                    android:textSize="30sp"
-                    android:textAlignment="center"
-                    android:layout_marginRight="7dp">
+                    android:textSize="27sp"
+                    android:textAlignment="center">
                 </TextView>
 
             </androidx.cardview.widget.CardView>
@@ -98,12 +111,11 @@
                 <TextView
                     android:id="@+id/tv_evening_temp"
                     android:layout_width="match_parent"
-                    android:layout_height="60dp"
+                    android:layout_height="55dp"
                     android:layout_gravity="bottom|center"
                     android:text="+25"
-                    android:textSize="30sp"
-                    android:textAlignment="center"
-                    android:layout_marginRight="7dp">
+                    android:textSize="27sp"
+                    android:textAlignment="center">
                 </TextView>
 
             </androidx.cardview.widget.CardView>
@@ -123,12 +135,11 @@
                 <TextView
                     android:id="@+id/tv_night_temp"
                     android:layout_width="match_parent"
-                    android:layout_height="60dp"
+                    android:layout_height="55dp"
                     android:layout_gravity="bottom|center"
                     android:text="+25"
-                    android:textSize="30sp"
-                    android:textAlignment="center"
-                    android:layout_marginRight="7dp">
+                    android:textSize="27sp"
+                    android:textAlignment="center">
                 </TextView>
 
             </androidx.cardview.widget.CardView>
@@ -136,15 +147,17 @@
         </LinearLayout>
 
         <TextView
+            android:id="@+id/tv_weather"
             android:layout_marginStart="10dp"
             android:layout_width="match_parent"
             android:layout_height="60dp"
             android:text="Погода:"
-            android:textSize="30sp"
+            android:textSize="25sp"
             android:gravity="left|center_vertical">
         </TextView>
 
         <TextView
+            android:id="@+id/tv_humidity"
             android:layout_marginStart="10dp"
             android:layout_width="match_parent"
             android:layout_height="60dp"
@@ -154,15 +167,17 @@
         </TextView>
 
         <TextView
+            android:id="@+id/tv_pressure"
             android:layout_marginStart="10dp"
             android:layout_width="match_parent"
             android:layout_height="60dp"
             android:text="Давление:"
-            android:textSize="30sp"
+            android:textSize="20sp"
             android:gravity="left|center_vertical">
         </TextView>
 
         <TextView
+            android:id="@+id/tv_wind"
             android:layout_marginStart="10dp"
             android:layout_width="match_parent"
             android:layout_height="60dp"
@@ -172,5 +187,7 @@
         </TextView>
 
     </LinearLayout>
+
+    </RelativeLayout>
 
 </layout>

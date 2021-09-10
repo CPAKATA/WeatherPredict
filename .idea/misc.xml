@@ -3,7 +3,7 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/WeatherPredict/app/src/main/res/layout/activity_main.xml" value="0.25" />
+        <entry key="..\:/WeatherPredict/app/src/main/res/layout/activity_main.xml" value="0.22" />
         <entry key="..\:/WeatherPredict/app/src/main/res/layout/fragment_weather_city.xml" value="0.25" />
         <entry key="..\:/WeatherPredict/app/src/main/res/layout/fragment_weather_city_select.xml" value="0.33" />
         <entry key="..\:/WeatherPredict/app/src/main/res/layout/fragment_weather_today.xml" value="0.25" />
