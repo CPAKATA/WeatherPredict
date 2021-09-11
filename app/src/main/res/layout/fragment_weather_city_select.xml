@@ -107,9 +107,9 @@
                 android:id="@+id/wind"
                 android:layout_marginStart="10dp"
                 android:layout_width="match_parent"
-                android:layout_height="60dp"
+                android:layout_height="65dp"
                 android:text="Ветер:"
-                android:textSize="30sp"
+                android:textSize="23sp"
                 android:gravity="left|center_vertical">
             </TextView>
 

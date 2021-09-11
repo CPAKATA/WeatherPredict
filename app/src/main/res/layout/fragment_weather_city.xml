@@ -25,20 +25,20 @@
         <TextView
             android:id="@+id/tv_city_name"
             android:layout_width="match_parent"
-            android:layout_height="150dp"
+            android:layout_height="80dp"
             android:text="Москва"
             android:gravity="center"
             android:textAlignment="center"
-            android:textSize="40sp">
+            android:textSize="45sp">
         </TextView>
 
         <TextView
             android:id="@+id/tv_temp"
             android:layout_width="match_parent"
-            android:layout_height="90dp"
+            android:layout_height="70dp"
             android:text="+26 C"
             android:textAlignment="center"
-            android:textSize="60sp"
+            android:textSize="40sp"
             android:gravity="center">
         </TextView>
 
@@ -180,9 +180,9 @@
             android:id="@+id/tv_wind"
             android:layout_marginStart="10dp"
             android:layout_width="match_parent"
-            android:layout_height="60dp"
+            android:layout_height="65dp"
             android:text="Ветер:"
-            android:textSize="30sp"
+            android:textSize="23sp"
             android:gravity="left|center_vertical">
         </TextView>
 
