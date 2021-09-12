@@ -46,7 +46,7 @@ class WeatherCitySelectFragment : Fragment(),TextConverter {
         binding.btnCheck.setOnClickListener {
             binding.layout.visibility = View.GONE
             binding.loading.visibility = View.VISIBLE
-            viewModel.loadSelectTemp(binding.editCity.text.toString())
+            viewModel.loadSelectTemp(binding.editCity.text.toString().replace(" ",""))
             viewModel.weather.observe(viewLifecycleOwner,{
                 if(it.cod == 200){
                     val text = "Погода: " + it.weather[0].description

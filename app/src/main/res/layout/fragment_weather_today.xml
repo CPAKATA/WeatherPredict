@@ -150,9 +150,9 @@
             android:id="@+id/weather"
             android:layout_marginStart="10dp"
             android:layout_width="match_parent"
-            android:layout_height="60dp"
+            android:layout_height="50dp"
             android:text="Погода:"
-            android:textSize="30sp"
+            android:textSize="20sp"
             android:gravity="left|center_vertical">
         </TextView>
 
